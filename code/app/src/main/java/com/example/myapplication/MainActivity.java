@@ -66,8 +66,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Request request = new Request.Builder()
-                .url("http://120.26.205.81:9000")
+                .url("http://120.26.205.81:9000/login")
                 .post(formBody)
+                .addHeader("Content-Type", "application/x-www-form-urlencoded")
                 .build();
         /*Request request = new Request.Builder()
                 .url("https://120.26.205.81:9000")
